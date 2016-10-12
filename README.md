@@ -1,4 +1,4 @@
-My System designing notes##
+My System designing notes
 
 Things to look for while designing a system
 
@@ -28,7 +28,7 @@ Local Caching vs Global Caching
 Proxy Servers - Collapsed Forwarding
 	A way to use a proxy to speed up data access is to collapse the same (or similar) requests together into one request, and then return the single result to the requesting clients.
 	Imagine there is a request for the same data (let's call it littleB) across several nodes, and that piece of data is not in the cache. If that request is routed thought the proxy, then all of those requests can be collapsed into one, which means we only have to read littleB off disk once.
-	Use  Squid and Varnish 
+	Use  Squid (http://www.squid-cache.org/) and Varnish (https://www.varnish-cache.org/intro/index.html#intro)
 DB Indexing
 Loadbalancers
-AWS Qus
+Think about queues
